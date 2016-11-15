@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson
+END
+utf.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/utf.c
+END
+strconv.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/strconv.c
+END
+hashtable.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/hashtable.h
+END
+strbuffer.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/strbuffer.c
+END
+utf.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/utf.h
+END
+jansson_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/jansson_config.h
+END
+dump.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/dump.c
+END
+strbuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/strbuffer.h
+END
+memory.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/memory.c
+END
+jansson_private.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/jansson_private.h
+END
+value.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/value.c
+END
+pack_unpack.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/pack_unpack.c
+END
+load.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/load.c
+END
+jansson.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/jansson.h
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/error.c
+END
+hashtable.c
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/jansson/hashtable.c
+END

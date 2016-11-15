@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/svn_mobile/!svn/ver/20378/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/NativeHelper
+END
+PhoneHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/svn_mobile/!svn/ver/20378/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/NativeHelper/PhoneHelper.h
+END
+NativeHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/NativeHelper/NativeHelper.cpp
+END
+NativeIOS.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/NativeHelper/NativeIOS.h
+END
+NativeIOS.mm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/NativeHelper/NativeIOS.mm
+END
+PhoneHelper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/svn_mobile/!svn/ver/20378/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/NativeHelper/PhoneHelper.cpp
+END
+NativeHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/NativeHelper/NativeHelper.h
+END

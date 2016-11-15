@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/svn_mobile/!svn/ver/21242/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network
+END
+IMessageHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/IMessageHandler.h
+END
+MyReachability.m
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/MyReachability.m
+END
+SenderParket.m
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/SenderParket.m
+END
+IMessageHandler.m
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/IMessageHandler.m
+END
+GlobalMessageHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/GlobalMessageHandler.h
+END
+Session.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/Session.h
+END
+MyReachability.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/MyReachability.h
+END
+SenderParket.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/SenderParket.h
+END
+GlobalMessageHandler.m
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/GlobalMessageHandler.m
+END
+Session.m
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/svn_mobile/!svn/ver/23146/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/Network/Session.m
+END

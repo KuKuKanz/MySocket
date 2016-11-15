@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS
+END
+GAITracker.h
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS/GAITracker.h
+END
+GAIDictionaryBuilder.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS/GAIDictionaryBuilder.h
+END
+GAITrackedViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS/GAITrackedViewController.h
+END
+GAI.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS/GAI.h
+END
+GAILogger.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS/GAILogger.h
+END
+libAdIdAccess.a
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS/libAdIdAccess.a
+END
+GAIFields.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS/GAIFields.h
+END
+libGoogleAnalyticsServices.a
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/Library/GoogleAnalyticIOS/libGoogleAnalyticsServices.a
+END

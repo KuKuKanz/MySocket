@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID
+END
+UIDevice+IdentifierAddition.m
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID/UIDevice+IdentifierAddition.m
+END
+NSString+MD5.m
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID/NSString+MD5.m
+END
+PDKeychainBindings.h
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID/PDKeychainBindings.h
+END
+PDKeychainBindingsController.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID/PDKeychainBindingsController.h
+END
+PDKeychainBindings.m
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID/PDKeychainBindings.m
+END
+PDKeychainBindingsController.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID/PDKeychainBindingsController.m
+END
+UIDevice+IdentifierAddition.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID/UIDevice+IdentifierAddition.h
+END
+NSString+MD5.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/svn_mobile/!svn/ver/18552/20160101/NPlay/Trunk/v3.10/NPlayGame/Classes/NFramework/ios/DeviceID/NSString+MD5.h
+END

@@ -1,0 +1,128 @@
+#include "NativeHelper.h"
+#include "PhoneHelper.h"
+
+USING_NS_CC;
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#include <jni.h>
+#include "jni/JniHelper.h"
+
+void sendCMDToAndroid(int CMD,const char* number,const char* string)
+{
+    JniMethodInfo t;
+    
+    if (JniHelper::getStaticMethodInfo(t,CLASSNAME,"receiveCMD","(ILjava/lang/String;Ljava/lang/String;)V"))
+    {
+        jstring str = t.env->NewStringUTF(string);
+        jstring num = t.env->NewStringUTF(number);
+        //t.env->CallStaticObjectMethod(t.classID, t.methodID,CMD,num,str);
+        t.env->CallStaticVoidMethod(t.classID, t.methodID,CMD,num,str);
+        t.env->DeleteLocalRef(t.classID);
+        
+        //t.env->DeleteLocalRef(str);
+    }
+}
+
+void sendEventoGAAndroid(const char* category,const char* action,const char* text)
+{
+    JniMethodInfo t;
+    
+    if (JniHelper::getStaticMethodInfo(t,CLASSNAME,"sendEventToGA","(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"))
+    {
+        jstring strCategory = t.env->NewStringUTF(category);
+        jstring strAction = t.env->NewStringUTF(action);
+        jstring strText = t.env->NewStringUTF(text);
+        //t.env->CallStaticObjectMethod(t.classID, t.methodID,strCategory,strAction,strText);
+        t.env->CallStaticVoidMethod(t.classID, t.methodID,strCategory,strAction,strText);
+        t.env->DeleteLocalRef(t.classID);
+        
+        //t.env->DeleteLocalRef(str);
+    }
+}
+
+void sendSceneToGAAndroid(const char* sceneName)
+{
+    JniMethodInfo t;
+    
+    if (JniHelper::getStaticMethodInfo(t,CLASSNAME,"sendSceneToGA","(Ljava/lang/String;)V"))
+    {
+        jstring strSceneName = t.env->NewStringUTF(sceneName);
+        //t.env->CallStaticObjectMethod(t.classID, t.methodID,strSceneName);
+        t.env->CallStaticVoidMethod(t.classID, t.methodID,strSceneName);
+        t.env->DeleteLocalRef(t.classID);
+        
+        //t.env->DeleteLocalRef(str);
+    }
+}
+
+void sendBytes(unsigned char* data,int length) {
+	JniMethodInfo t;
+    
+	if (JniHelper::getStaticMethodInfo(t,CLASSNAME,"sendBytes","([B)V"))
+	{
+        
+		jbyteArray array = t.env->NewByteArray (length);
+		t.env->SetByteArrayRegion (array, 0, length, reinterpret_cast<jbyte*>(data));
+		//t.env->CallStaticObjectMethod(t.classID, t.methodID,array);
+        t.env->CallStaticVoidMethod(t.classID, t.methodID,array);
+		t.env->DeleteLocalRef(array);
+        
+		//t.env->DeleteLocalRef(str);
+	}
+}
+
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_jniReceiveCMD(JNIEnv *env, jobject thisObj,jint _ID,jstring _str)
+{
+    int ID=(int)_ID;
+    const char* str=(env)->GetStringUTFChars( _str, NULL);
+    PhoneHelper::sharedInstace()->receiveCMDFormJNI(ID,str);
+    (env)->ReleaseStringUTFChars( _str, str);
+}
+
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_jniReceiMsg(JNIEnv *env,jobject thisObj,jbyteArray data) {
+	int len = env->GetArrayLength(data);
+	byte* bytes = new byte[len];
+	env->GetByteArrayRegion (data, 0, len, reinterpret_cast<jbyte*>(bytes));
+    
+	//send data to Server
+	NetworkController::sharedNetworkController()->onReceivedByte(bytes,len);
+}
+
+#pragma mark Begin Network android
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_jniOnDisconnect(JNIEnv *env, jobject thisObj)
+{
+    NetworkController::sharedNetworkController()->onDisconnect();
+}
+
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_jniOnConnectOK(JNIEnv *env, jobject thisObj)
+{
+    NetworkController::sharedNetworkController()->onConnectOk();
+}
+
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_jniOnConnectConnectFail(JNIEnv *env, jobject thisObj)
+{
+    NetworkController::sharedNetworkController()->onErrorConectSocket();
+}
+
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_jniOnNetworkStatus(JNIEnv *env, jobject thisObj, jboolean status)
+{
+    bool responce = (bool) status;
+    NetworkController::sharedNetworkController()->setNetworkDevice(responce);
+}
+#pragma mark End Network android
+
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_rewardedVideoWasViewedAdcolony(JNIEnv *env, jobject thisObj){
+    //GlobalService::requestVideoComplete();
+}
+
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_videoNotAvailable(JNIEnv *env, jobject thisObj){
+    
+}
+
+void Java_org_cocos2dx_hellocpp_Cocos2dxNativeHelper_rewardedVideoWasViewedVungle(JNIEnv *env, jobject thisObj){
+    //GlobalService::requestVideoComplete();
+}
+
+
+
+#endif // CC_PLATFORM_ANDROID
