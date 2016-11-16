@@ -29,6 +29,7 @@
 +(id)getInstance;
 -(void) connect:(NSObject*)prms;
 -(void) sendMessage: (SenderParket*) packer;
+-(void) sendMessageData: (NSObject*)prms;
 
 @property(strong,nonatomic) NSString* m_ip;
 @property(assign,nonatomic) int port;

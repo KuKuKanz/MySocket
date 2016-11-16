@@ -54,6 +54,10 @@ bool HelloWorld::init()
     _label = rootNode->getChildByTag<Text*>(1);
     auto _button = (Button*)rootNode->getChildByTag(3);
     auto _buttonSend = (Button*)rootNode->getChildByTag(6);
+    
+    _txtField = (TextField*)rootNode->getChildByTag(4);
+    _txtField->addEventListener(CC_CALLBACK_2(HelloWorld::callBackTextField, this));
+
 
     _label->setString("");
     
@@ -77,8 +81,8 @@ void HelloWorld::callBackTouchBtn(cocos2d::Ref *pSender, Widget::TouchEventType 
                 
                 _label->setString("Conneting to server...");
             }else if (_btn->getTag() == 6){
-                char* msg = "Hello World";
-                sendMessageWithData("sendBytes",msg,20);
+                sendMessage(_txtField->getString());
+                _txtField->setString("");
             }
             break;
         }
@@ -88,6 +92,32 @@ void HelloWorld::callBackTouchBtn(cocos2d::Ref *pSender, Widget::TouchEventType 
     }
 }
 
+void HelloWorld::callBackTextField(cocos2d::Ref *pSender, TextField::EventType _type){
+    switch (_type) {
+        case cocos2d::ui::TextField::EventType::ATTACH_WITH_IME:
+        {
+            _txtField->runAction(ScaleTo::create(0.5, 1.2));
+        }
+            break;
+            
+        case cocos2d::ui::TextField::EventType::DETACH_WITH_IME:
+        {
+            _txtField->runAction(ScaleTo::create(0.5, 1));
+        }
+            break;
+            
+        case cocos2d::ui::TextField::EventType::INSERT_TEXT:
+            
+            break;
+            
+        case cocos2d::ui::TextField::EventType::DELETE_BACKWARD:
+            
+            break;
+            
+        default:
+            break;
+    }
+}
 
 void HelloWorld::connect(string ip, int port){
     
@@ -98,6 +128,14 @@ void HelloWorld::connect(string ip, int port){
     
     // Send connect method to RootViewController class in order to connect to server
     sendMessageWithParams(string("connect"), parameters);
+}
+
+void HelloWorld::sendMessage(string s){
+    ValueMap valueMap;
+    valueMap["msg"] = s;
+    Value parameters = Value(valueMap);
+    
+    sendMessageWithParams(string("sendMessageData"), parameters);
 }
 
 void HelloWorld::onConnectOk(){

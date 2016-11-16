@@ -23,10 +23,13 @@ public:
     CREATE_FUNC(HelloWorld);
     
     Text* _label;
+    TextField* _txtField;
     
     
     void callBackTouchBtn(Ref* pSender, Widget::TouchEventType _type);
+    void callBackTextField(Ref* pSender, TextField::EventType _type);
     void connect(string ip, int port);
+    void sendMessage(string s);
     void onConnectOk();
 
 };

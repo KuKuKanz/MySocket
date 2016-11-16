@@ -73,6 +73,27 @@ static id ROOT;
                 break;
                 
             case NSStreamEventHasBytesAvailable:
+            {
+                if (aStream == inputStream) {
+                    
+                    uint8_t buffer[1024];
+                    int len;
+                    
+                    while ([inputStream hasBytesAvailable]) {
+                        len = [inputStream read:buffer maxLength:sizeof(buffer)];
+                        if (len > 0) {
+                            
+                            NSString *output = [[NSString alloc] initWithBytes:buffer length:len encoding:NSASCIIStringEncoding];
+                            
+                            if (nil != output) {
+                                
+                                NSLog(@"server said: %@", output);
+                                
+                            }
+                        }
+                    }
+                }
+            }
                 break;
                 
             case NSStreamEventHasSpaceAvailable:
@@ -108,6 +129,21 @@ static id ROOT;
 
 
 
+-(void)sendMessageData:(NSObject *)prms{
+    NSDictionary* paramaters = (NSDictionary*)prms;
+    NSString* response = (NSString*)[paramaters objectForKey:@"msg"];
+    
+    if ([outputStream hasSpaceAvailable]){
+        
+        NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        [outputStream write:[data bytes] maxLength:data.length];
+        
+    }else{
+        NSLog(@"No space available");
+    }
+}
+
 -(void)sendMessage:(SenderParket *)packer{
     SenderParket* _packer = [[SenderParket alloc] init];
 
@@ -124,23 +160,6 @@ static id ROOT;
     }else{
         NSLog(@"No space available");
     }
-
-
-//    SenderParket* sender = [[SenderParket alloc] init];
-//    
-//    if ([outputStream hasSpaceAvailable]){
-//        NSString *response  = @"Hello World";
-//        NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSUTF8StringEncoding]];
-//        [sender.bytes appendData:data];
-//        
-//        @synchronized (sender) {
-//            [outputStream write:[sender.bytes bytes] maxLength:[data length]];
-//        }
-//        
-//    }else{
-//        NSLog(@"No space available");
-//    }
-
 }
 
 @end
